@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OffLink Политика конфиденциальности</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;line-height:1.8;color:#333}h1{border-bottom:2px solid #1a73e8;padding-bottom:8px}h2{color:#1a73e8;margin-top:2em}table{border-collapse:collapse;width:100%;margin:1em 0}th,td{border:1px solid #ddd;padding:8px 12px;text-align:left}th{background:#f5f5f5}.updated{color:#666;font-size:.9em}.lang-selector{text-align:right;margin-bottom:1em}.lang-selector select{font-size:14px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;background:#fff}
+  </style>
+</head>
+<body>
+  <div class="lang-selector"><select onchange="if(this.value)window.location.href=this.value"><option value=''>🌐 Language</option><option value='privacy-policy-ar.html'>العربية</option><option value='privacy-policy-de.html'>Deutsch</option><option value='privacy-policy-en.html'>English</option><option value='privacy-policy-es.html'>Español</option><option value='privacy-policy-fr.html'>Français</option><option value='privacy-policy-hi.html'>हिन्दी</option><option value='privacy-policy-id.html'>Bahasa Indonesia</option><option value='privacy-policy-it.html'>Italiano</option><option value='privacy-policy-ja.html'>日本語</option><option value='privacy-policy-ko.html'>한국어</option><option value='privacy-policy-my.html'>မြန်မာ</option><option value='privacy-policy-pt.html'>Português</option><option value='privacy-policy-ru.html' selected>Русский</option><option value='privacy-policy-sw.html'>Kiswahili</option><option value='privacy-policy-th.html'>ไทย</option><option value='privacy-policy-vi.html'>Tiếng Việt</option><option value='privacy-policy-zh.html'>中文</option><option value='privacy-policy-zh-Hans.html'>简体中文</option><option value='privacy-policy-zh-Hant.html'>繁體中文</option></select></div>
+  <h1>Политика конфиденциальности OffLink</h1>
+  <p class="updated">Последнее обновление: 19 апреля 2026 г.</p>
+  <p>H Labs Works («мы») управляет мобильным приложением «OffLink» («Приложение»). Настоящая политика конфиденциальности описывает, как мы собираем, используем и защищаем вашу информацию.</p>
+  <h2>1. О Приложении</h2>
+  <p>OffLink — это приложение для групповых голосовых вызовов, использующее технологию точки доступа Wi-Fi и WebRTC без подключения к Интернету. Голосовые данные передаются локально между устройствами и никогда не отправляются на внешние серверы.</p>
+  <h2>2. Собираемая информация</h2>
+  <h3>2.1 Информация, собираемая непосредственно Приложением</h3>
+  <table><tr><th>Информация</th><th>Цель</th><th>Хранение</th></tr><tr><td>Имя пользователя (необязательно)</td><td>Идентификация участников во время вызовов</td><td>Только на устройстве (SharedPreferences)</td></tr><tr><td>Информация о группе (название, SSID, пароль)</td><td>Настройка и подключение групповых вызовов</td><td>Только на устройстве (SharedPreferences)</td></tr><tr><td>Баланс и история баллов</td><td>Управление системой баллов в приложении</td><td>Только на устройстве (зашифровано)</td></tr><tr><td>Информация об устройстве (версия ОС, батарея, память)</td><td>Оценка выбора хоста</td><td>Только во время сеанса вызова (не сохраняется)</td></tr></table>
+  <p><strong>О голосовых данных:</strong> Аудио вызовов шифруется с помощью WebRTC (DTLS-SRTP) и передаётся только между устройствами в локальной сети. Голосовые данные никогда не отправляются на наши серверы или внешние серверы.</p>
+  <h3>2.2 Информация, собираемая сторонними сервисами</h3>
+  <p>Приложение использует следующие сторонние сервисы, которые могут независимо собирать информацию.</p>
+  <h4>Google AdMob (Реклама)</h4>
+  <ul><li>Для показа рекламы Google может собирать рекламные идентификаторы (Android: AAID), информацию об устройстве, приблизительное местоположение и данные об использовании приложения.</li><li>Собранные данные могут использоваться для показа персонализированной рекламы.</li><li>Подробнее: <a href='https://policies.google.com/privacy'>Политика конфиденциальности Google</a></li></ul>
+  <h4>Firebase (Планируется для будущих версий)</h4>
+  <ul><li>Мы планируем интегрировать Firebase Authentication и Cloud Firestore для анонимной аутентификации и сбора данных об использовании приложения.</li><li>Настоящая политика будет обновлена при интеграции.</li></ul>
+  <h2>3. Информация о местоположении</h2>
+  <p>Приложение использует разрешение на доступ к местоположению Android (ACCESS_FINE_LOCATION) для управления функциональностью точки доступа Wi-Fi и получения информации SSID. Это разрешение требуется ОС Android для API, связанных с Wi-Fi, и не используется для отслеживания, записи или передачи вашего географического местоположения.</p>
+  <h2>4. Камера</h2>
+  <p>Приложение использует разрешение на доступ к камере для сканирования QR-кодов. Захваченные изображения используются исключительно для анализа QR-кодов и не сохраняются и не передаются.</p>
+  <h2>5. Микрофон</h2>
+  <p>Приложение использует разрешение на доступ к микрофону для групповых голосовых вызовов. Записанный звук передаётся в реальном времени только участникам в той же локальной сети и никогда не записывается и не хранится на каком-либо устройстве или сервере.</p>
+  <h2>6. Передача данных третьим лицам</h2>
+  <p>Мы не передаём вашу личную информацию третьим лицам, за исключением следующих случаев:</p>
+  <ul><li>Информация, описанная в Разделе 2.2, автоматически передаётся в Google AdMob для показа рекламы.</li><li>Когда этого требует закон.</li><li>С вашего согласия.</li></ul>
+  <h2>7. Отказ от рекламы</h2>
+  <p>Если вы не хотите получать персонализированную рекламу, вы можете изменить свои настройки:</p>
+  <ul><li><strong>Android:</strong> Настройки → Google → Реклама → Включить «Отключить персонализацию рекламы»</li><li><strong>iOS:</strong> Настройки → Конфиденциальность и безопасность → Отслеживание → Отключить «Разрешить приложениям запрашивать отслеживание»</li></ul>
+  <h2>8. Хранение и удаление данных</h2>
+  <ul><li>Все данные, сохранённые непосредственно Приложением, хранятся только на вашем устройстве.</li><li>Удаление Приложения приведёт к удалению всех локальных данных.</li><li>Для данных, собранных Google AdMob, ознакомьтесь с политикой конфиденциальности Google.</li></ul>
+  <h2>9. Конфиденциальность детей</h2>
+  <p>Приложение не предназначено для детей младше 13 лет, и мы не собираем сознательно личную информацию у детей младше 13 лет.</p>
+  <h2>10. Изменения в настоящей политике</h2>
+  <p>Мы можем обновлять настоящую политику конфиденциальности по мере необходимости. О существенных изменениях будет сообщено через уведомления в приложении или на данной странице.</p>
+  <h2>11. Свяжитесь с нами</h2>
+  <p>По вопросам, касающимся настоящей политики конфиденциальности, свяжитесь с нами:</p>
+  <ul><li>Оператор: H Labs Works</li><li>Email: hlabsworks@gmail.com</li></ul>
+</body>
+</html>
