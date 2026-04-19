@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OffLink Chính sách Bảo mật</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;line-height:1.8;color:#333}h1{border-bottom:2px solid #1a73e8;padding-bottom:8px}h2{color:#1a73e8;margin-top:2em}table{border-collapse:collapse;width:100%;margin:1em 0}th,td{border:1px solid #ddd;padding:8px 12px;text-align:left}th{background:#f5f5f5}.updated{color:#666;font-size:.9em}.lang-selector{text-align:right;margin-bottom:1em}.lang-selector select{font-size:14px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;background:#fff}
+  </style>
+</head>
+<body>
+  <div class="lang-selector"><select onchange="if(this.value)window.location.href=this.value"><option value=''>🌐 Language</option><option value='privacy-policy-ar.html'>العربية</option><option value='privacy-policy-de.html'>Deutsch</option><option value='privacy-policy-en.html'>English</option><option value='privacy-policy-es.html'>Español</option><option value='privacy-policy-fr.html'>Français</option><option value='privacy-policy-hi.html'>हिन्दी</option><option value='privacy-policy-id.html'>Bahasa Indonesia</option><option value='privacy-policy-it.html'>Italiano</option><option value='privacy-policy-ja.html'>日本語</option><option value='privacy-policy-ko.html'>한국어</option><option value='privacy-policy-my.html'>မြန်မာ</option><option value='privacy-policy-pt.html'>Português</option><option value='privacy-policy-ru.html'>Русский</option><option value='privacy-policy-sw.html'>Kiswahili</option><option value='privacy-policy-th.html'>ไทย</option><option value='privacy-policy-vi.html' selected>Tiếng Việt</option><option value='privacy-policy-zh.html'>中文</option><option value='privacy-policy-zh-Hans.html'>简体中文</option><option value='privacy-policy-zh-Hant.html'>繁體中文</option></select></div>
+  <h1>Chính sách Bảo mật của OffLink</h1>
+  <p class="updated">Cập nhật lần cuối: 19 tháng 4, 2026</p>
+  <p>H Labs Works ("chúng tôi") vận hành ứng dụng di động "OffLink" ("Ứng dụng"). Chính sách bảo mật này mô tả cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn.</p>
+  <h2>1. Về Ứng dụng</h2>
+  <p>OffLink là ứng dụng gọi thoại nhóm sử dụng công nghệ Wi-Fi hotspot và WebRTC mà không cần kết nối Internet. Dữ liệu giọng nói được truyền cục bộ giữa các thiết bị và không bao giờ được gửi đến máy chủ bên ngoài.</p>
+  <h2>2. Thông tin chúng tôi thu thập</h2>
+  <h3>2.1 Thông tin Ứng dụng trực tiếp thu thập</h3>
+  <table><tr><th>Thông tin</th><th>Mục đích</th><th>Lưu trữ</th></tr><tr><td>Tên người dùng (tùy chọn)</td><td>Nhận diện thành viên trong cuộc gọi</td><td>Chỉ trên thiết bị (SharedPreferences)</td></tr><tr><td>Thông tin nhóm (tên nhóm, SSID, mật khẩu)</td><td>Cấu hình và kết nối cuộc gọi nhóm</td><td>Chỉ trên thiết bị (SharedPreferences)</td></tr><tr><td>Số dư và lịch sử điểm</td><td>Quản lý hệ thống điểm trong ứng dụng</td><td>Chỉ trên thiết bị (mã hóa)</td></tr><tr><td>Thông tin thiết bị (phiên bản OS, pin, bộ nhớ)</td><td>Đánh giá lựa chọn máy chủ</td><td>Chỉ trong phiên gọi (không lưu trữ vĩnh viễn)</td></tr></table>
+  <p><strong>Về dữ liệu giọng nói:</strong> Âm thanh cuộc gọi được mã hóa bằng WebRTC (DTLS-SRTP) và chỉ được truyền giữa các thiết bị trong mạng cục bộ. Dữ liệu giọng nói không bao giờ được gửi đến máy chủ của chúng tôi hoặc máy chủ bên ngoài.</p>
+  <h3>2.2 Thông tin được thu thập bởi dịch vụ bên thứ ba</h3>
+  <p>Ứng dụng sử dụng các dịch vụ bên thứ ba sau, có thể thu thập thông tin độc lập.</p>
+  <h4>Google AdMob (Quảng cáo)</h4>
+  <ul><li>Để hiển thị quảng cáo, Google có thể thu thập mã nhận dạng quảng cáo (Android: AAID), thông tin thiết bị, vị trí gần đúng và dữ liệu sử dụng ứng dụng.</li><li>Dữ liệu thu thập có thể được sử dụng để hiển thị quảng cáo cá nhân hóa.</li><li>Chi tiết: <a href='https://policies.google.com/privacy'>Chính sách Bảo mật của Google</a></li></ul>
+  <h4>Firebase (Dự kiến cho các phiên bản tương lai)</h4>
+  <ul><li>Chúng tôi dự kiến tích hợp Firebase Authentication và Cloud Firestore cho xác thực ẩn danh và thu thập dữ liệu sử dụng ứng dụng.</li><li>Chính sách này sẽ được cập nhật khi tích hợp.</li></ul>
+  <h2>3. Thông tin vị trí</h2>
+  <p>Ứng dụng sử dụng quyền truy cập vị trí Android (ACCESS_FINE_LOCATION) để điều khiển chức năng Wi-Fi hotspot và lấy thông tin SSID. Quyền này được hệ điều hành Android yêu cầu cho các API liên quan đến Wi-Fi và không được sử dụng để theo dõi, ghi lại hoặc truyền vị trí địa lý của bạn.</p>
+  <h2>4. Camera</h2>
+  <p>Ứng dụng sử dụng quyền truy cập camera để quét mã QR. Hình ảnh chụp chỉ được sử dụng để phân tích mã QR và không được lưu trữ hoặc truyền đi.</p>
+  <h2>5. Microphone</h2>
+  <p>Ứng dụng sử dụng quyền truy cập microphone cho cuộc gọi thoại nhóm. Âm thanh được ghi được truyền theo thời gian thực chỉ cho các thành viên trong cùng mạng cục bộ và không bao giờ được ghi lại hoặc lưu trữ trên bất kỳ thiết bị hoặc máy chủ nào.</p>
+  <h2>6. Chia sẻ dữ liệu với bên thứ ba</h2>
+  <p>Chúng tôi không chia sẻ thông tin cá nhân của bạn với bên thứ ba, ngoại trừ trong các trường hợp sau:</p>
+  <ul><li>Thông tin được mô tả trong Mục 2.2 được tự động gửi đến Google AdMob để hiển thị quảng cáo.</li><li>Khi pháp luật yêu cầu.</li><li>Với sự đồng ý của bạn.</li></ul>
+  <h2>7. Từ chối quảng cáo</h2>
+  <p>Nếu bạn không muốn nhận quảng cáo cá nhân hóa, bạn có thể thay đổi cài đặt của mình:</p>
+  <ul><li><strong>Android:</strong> Cài đặt → Google → Quảng cáo → Bật "Tắt cá nhân hóa quảng cáo"</li><li><strong>iOS:</strong> Cài đặt → Quyền riêng tư & Bảo mật → Theo dõi → Tắt "Cho phép ứng dụng yêu cầu theo dõi"</li></ul>
+  <h2>8. Lưu giữ và xóa dữ liệu</h2>
+  <ul><li>Tất cả dữ liệu được Ứng dụng lưu trực tiếp chỉ được lưu trên thiết bị của bạn.</li><li>Gỡ cài đặt Ứng dụng sẽ xóa tất cả dữ liệu cục bộ.</li><li>Đối với dữ liệu được Google AdMob thu thập, vui lòng tham khảo chính sách bảo mật của Google.</li></ul>
+  <h2>9. Quyền riêng tư của trẻ em</h2>
+  <p>Ứng dụng không dành cho trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi.</p>
+  <h2>10. Thay đổi chính sách này</h2>
+  <p>Chúng tôi có thể cập nhật chính sách bảo mật này khi cần thiết. Các thay đổi quan trọng sẽ được thông báo qua thông báo trong ứng dụng hoặc trên trang này.</p>
+  <h2>11. Liên hệ chúng tôi</h2>
+  <p>Nếu có câu hỏi về chính sách bảo mật này, vui lòng liên hệ chúng tôi:</p>
+  <ul><li>Nhà điều hành: H Labs Works</li><li>Email: hlabsworks@gmail.com</li></ul>
+</body>
+</html>
