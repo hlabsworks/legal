@@ -5,46 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OffLink 隐私政策</title>
   <style>
-    body{font-family:'Noto Sans SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:800px;margin:0 auto;padding:20px;line-height:1.8;color:#333}h1{border-bottom:2px solid #1a73e8;padding-bottom:8px}h2{color:#1a73e8;margin-top:2em}table{border-collapse:collapse;width:100%;margin:1em 0}th,td{border:1px solid #ddd;padding:8px 12px;text-align:left}th{background:#f5f5f5}.updated{color:#666;font-size:.9em}.lang-selector{text-align:right;margin-bottom:1em}.lang-selector select{font-size:14px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;background:#fff}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;line-height:1.8;color:#333}h1{border-bottom:2px solid #1a73e8;padding-bottom:8px}h2{color:#1a73e8;margin-top:2em}table{border-collapse:collapse;width:100%;margin:1em 0}th,td{border:1px solid #ddd;padding:8px 12px;text-align:left}th{background:#f5f5f5}.updated{color:#666;font-size:.9em}.lang-selector{text-align:right;margin-bottom:1em}.lang-selector select{font-size:14px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;background:#fff}
   </style>
 </head>
 <body>
   <div class="lang-selector"><select onchange="if(this.value)window.location.href=this.value"><option value=''>🌐 Language</option><option value='privacy-policy-ar.html'>العربية</option><option value='privacy-policy-de.html'>Deutsch</option><option value='privacy-policy-en.html'>English</option><option value='privacy-policy-es.html'>Español</option><option value='privacy-policy-fr.html'>Français</option><option value='privacy-policy-hi.html'>हिन्दी</option><option value='privacy-policy-id.html'>Bahasa Indonesia</option><option value='privacy-policy-it.html'>Italiano</option><option value='privacy-policy-ja.html'>日本語</option><option value='privacy-policy-ko.html'>한국어</option><option value='privacy-policy-my.html'>မြန်မာ</option><option value='privacy-policy-pt.html'>Português</option><option value='privacy-policy-ru.html'>Русский</option><option value='privacy-policy-sw.html'>Kiswahili</option><option value='privacy-policy-th.html'>ไทย</option><option value='privacy-policy-vi.html'>Tiếng Việt</option><option value='privacy-policy-zh.html'>中文</option><option value='privacy-policy-zh-Hans.html' selected>简体中文</option><option value='privacy-policy-zh-Hant.html'>繁體中文</option></select></div>
   <h1>OffLink 隐私政策</h1>
-  <p class="updated">最后更新：2026年4月19日</p>
-  <p>H Labs Works（“我们”）运营移动应用程序“OffLink”（“本应用”）。本隐私政策说明我们如何收集、使用和保护您的信息。</p>
+  <p class="updated">最后更新：2026年4月22日</p>
+  <p>H Labs Works（"我们"）运营移动应用程序"OffLink"（"本应用"）。本隐私政策说明我们如何收集、使用和保护您的信息。</p>
   <h2>1. 关于本应用</h2>
   <p>OffLink 是一款使用 Wi-Fi 热点和 WebRTC 技术的群组语音通话应用，无需互联网连接。语音数据在设备之间本地传输，从不发送到外部服务器。</p>
   <h2>2. 我们收集的信息</h2>
   <h3>2.1 本应用直接收集的信息</h3>
-  <table><tr><th>信息</th><th>目的</th><th>存储</th></tr><tr><td>用户名（可选）</td><td>通话期间识别成员</td><td>仅在设备上（SharedPreferences）</td></tr><tr><td>群组信息（群组名、SSID、密码）</td><td>群组通话配置和连接</td><td>仅在设备上（SharedPreferences）</td></tr><tr><td>积分余额和历史</td><td>应用内积分系统管理</td><td>仅在设备上（加密）</td></tr><tr><td>设备信息（OS 版本、电池、内存）</td><td>主机选择评估</td><td>仅在通话期间（不持久存储）</td></tr></table>
-  <p><strong>关于语音数据：</strong>通话音频通过 WebRTC（DTLS-SRTP）加密，仅在本地网络内的设备之间传输。语音数据从不发送到我们的服务器或任何外部服务器。</p>
+  <table><tr><th>信息</th><th>用途</th><th>存储</th></tr><tr><td>用户名（可选）</td><td>通话期间识别成员</td><td>仅在设备上（SharedPreferences）</td></tr><tr><td>群组信息（名称、SSID、密码）</td><td>群组通话设置和连接</td><td>仅在设备上（SharedPreferences）</td></tr><tr><td>积分余额和历史</td><td>应用内积分系统管理</td><td>仅在设备上（已加密）</td></tr><tr><td>设备信息（OS版本、电池、内存）</td><td>主机选择评估</td><td>仅在通话会话期间（非持久）</td></tr></table>
+  <p><strong>关于语音数据：</strong>通话音频使用 WebRTC（DTLS-SRTP）加密，仅在本地网络上的设备之间传输。语音数据从不发送到我们的服务器或任何外部服务器。</p>
   <h3>2.2 第三方服务收集的信息</h3>
-  <p>本应用使用以下第三方服务，这些服务可能会独立收集信息。</p>
+  <p>本应用使用以下第三方服务，这些服务可能独立收集信息。</p>
   <h4>Google AdMob（广告）</h4>
-  <ul><li>为了展示广告，Google 可能会收集广告标识符（Android: AAID）、设备信息、大致位置和应用使用数据。</li><li>收集的数据可能用于展示个性化广告。</li><li>详情：<a href='https://policies.google.com/privacy'>Google 隐私政策</a></li></ul>
-  <h4>Firebase（计划在未来版本中集成）</h4>
-  <ul><li>我们计划集成 Firebase Authentication 和 Cloud Firestore，用于匿名身份验证和应用使用数据收集。</li><li>集成时本政策将相应更新。</li></ul>
+  <ul><li>为了投放广告，Google 可能收集广告标识符（Android: AAID）、设备信息、大致位置和应用使用数据。</li><li>收集的数据可能用于展示个性化广告。</li><li>详情：<a href='https://policies.google.com/privacy'>Google 隐私政策</a></li></ul>
+  <h4>Firebase（匿名身份验证、Cloud Firestore、Cloud Messaging）</h4>
+  <ul><li>本应用使用 Firebase 匿名身份验证来识别会话，而不与个人身份关联。无需创建账户或输入邮箱/密码。</li><li>群组成员信息（群组 ID、显示名称、FCM 令牌）存储在 Cloud Firestore 中以启用推送通知。当您离开群组或卸载本应用时，数据将自动删除。</li><li>Firebase Cloud Messaging (FCM) 用于在本应用处于后台时发送通话邀请通知。</li><li>详情：<a href='https://firebase.google.com/support/privacy'>Firebase 隐私和安全</a></li></ul>
+  <h4>Firebase Crashlytics（崩溃报告）</h4>
+  <ul><li>为提高应用稳定性，崩溃信息、非致命错误和面包屑日志将发送到 Firebase Crashlytics。</li><li>为保护您的隐私，不传输用户标识符（设备 ID 等）。Crashlytics 仅使用 Firebase Installation ID 运行。</li><li>数据发送至 Google Firebase 服务并存储。不支持欧盟数据驻留；适用 Google 的欧盟-美国数据隐私框架（DPF）。</li><li>详情：<a href='https://firebase.google.com/support/privacy'>Firebase 隐私和安全</a></li></ul>
   <h2>3. 位置信息</h2>
-  <p>本应用使用 Android 位置权限（ACCESS_FINE_LOCATION）来控制 Wi-Fi 热点功能和获取 SSID 信息。该权限是 Android 操作系统对 Wi-Fi 相关 API 的要求，不用于跟踪、记录或传输您的地理位置。</p>
-  <h2>4. 摄像头</h2>
-  <p>本应用使用摄像头权限用于扫描二维码。拍摄的图像仅用于二维码分析，不会被存储或传输。</p>
+  <p>本应用使用 Android 位置权限（ACCESS_FINE_LOCATION）来控制 Wi-Fi 热点功能并获取 SSID 信息。此权限由 Android 操作系统对 Wi-Fi 相关 API 要求，不用于追踪、记录或传输您的地理位置。</p>
+  <h2>4. 相机</h2>
+  <p>本应用使用相机权限扫描二维码。拍摄的图像仅用于二维码分析，不会被存储或传输。</p>
   <h2>5. 麦克风</h2>
-  <p>本应用使用麦克风权限用于群组语音通话。录制的音频仅实时传输给同一本地网络中的成员，从不在任何设备或服务器上录制或存储。</p>
+  <p>本应用使用麦克风权限进行群组语音通话。录制的音频仅实时传输给同一本地网络上的成员，不会在任何设备或服务器上录制或存储。</p>
   <h2>6. 与第三方共享数据</h2>
-  <p>我们不会将您的个人信息与第三方共享，以下情况除外：</p>
-  <ul><li>第 2.2 节所述信息会自动发送至 Google AdMob 用于广告展示。</li><li>法律要求时。</li><li>经您同意。</li></ul>
+  <p>除以下情况外，我们不与第三方共享您的个人信息：</p>
+  <ul><li>第2.2节中描述的信息会自动传输到 Google AdMob 用于广告投放。</li><li>法律要求时。</li><li>经您同意。</li></ul>
   <h2>7. 广告退出</h2>
-  <p>如果您不希望接收个性化广告，可以更改设置：</p>
-  <ul><li><strong>Android：</strong>设置 → Google → 广告 → 开启“停用广告个性化”</li><li><strong>iOS：</strong>设置 → 隐私与安全性 → 跟踪 → 关闭“允许应用请求跟踪”</li></ul>
+  <p>如果您不想接收个性化广告，可以更改设置：</p>
+  <ul><li><strong>Android：</strong>设置 → Google → 广告 → 开启"停用广告个性化"</li><li><strong>iOS：</strong>设置 → 隐私与安全性 → 追踪 → 关闭"允许应用请求追踪"</li></ul>
   <h2>8. 数据保留和删除</h2>
-  <ul><li>本应用直接存储的所有数据仅保存在您的设备上。</li><li>卸载本应用将删除所有本地数据。</li><li>关于 Google AdMob 收集的数据，请参阅 Google 隐私政策。</li></ul>
+  <ul><li>本应用直接存储的所有数据仅保存在您的设备上。</li><li>卸载本应用将删除所有本地数据。</li><li>对于 Google AdMob 收集的数据，请参阅 Google 的隐私政策。</li></ul>
   <h2>9. 儿童隐私</h2>
   <p>本应用不面向13岁以下儿童，我们不会故意收集13岁以下儿童的个人信息。</p>
   <h2>10. 本政策的变更</h2>
-  <p>我们可能会根据需要更新本隐私政策。重大变更将通过应用内通知或本页面告知。</p>
+  <p>我们可能会根据需要更新本隐私政策。重大变更将通过应用内通知或本页面告知您。</p>
   <h2>11. 联系我们</h2>
-  <p>如果您对本隐私政策有任何疑问，请联系我们：</p>
-  <ul><li>运营方：H Labs Works</li><li>电子邮件：hlabsworks@gmail.com</li></ul>
+  <p>如对本隐私政策有疑问，请联系我们：</p>
+  <ul><li>运营者：H Labs Works</li><li>电子邮件：hlabsworks@gmail.com</li></ul>
 </body>
 </html>
