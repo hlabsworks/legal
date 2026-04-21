@@ -11,7 +11,7 @@
 <body>
   <div class="lang-selector"><select onchange="if(this.value)window.location.href=this.value"><option value=''>🌐 Language</option><option value='privacy-policy-ar.html' selected>العربية</option><option value='privacy-policy-de.html'>Deutsch</option><option value='privacy-policy-en.html'>English</option><option value='privacy-policy-es.html'>Español</option><option value='privacy-policy-fr.html'>Français</option><option value='privacy-policy-hi.html'>हिन्दी</option><option value='privacy-policy-id.html'>Bahasa Indonesia</option><option value='privacy-policy-it.html'>Italiano</option><option value='privacy-policy-ja.html'>日本語</option><option value='privacy-policy-ko.html'>한국어</option><option value='privacy-policy-my.html'>မြန်မာ</option><option value='privacy-policy-pt.html'>Português</option><option value='privacy-policy-ru.html'>Русский</option><option value='privacy-policy-sw.html'>Kiswahili</option><option value='privacy-policy-th.html'>ไทย</option><option value='privacy-policy-vi.html'>Tiếng Việt</option><option value='privacy-policy-zh.html'>中文</option><option value='privacy-policy-zh-Hans.html'>简体中文</option><option value='privacy-policy-zh-Hant.html'>繁體中文</option></select></div>
   <h1>سياسة الخصوصية لتطبيق OffLink</h1>
-  <p class="updated">آخر تحديث: ١٩ أبريل ٢٠٢٦</p>
+  <p class="updated">آخر تحديث: ٢٢ أبريل ٢٠٢٦</p>
   <p>تدير H Labs Works ("نحن") تطبيق الهاتف المحمول "OffLink" ("التطبيق"). توضح سياسة الخصوصية هذه كيفية جمع معلوماتك واستخدامها وحمايتها.</p>
   <h2>١. حول التطبيق</h2>
   <p>OffLink هو تطبيق مكالمات صوتية جماعية يستخدم تقنية نقطة اتصال Wi-Fi و WebRTC دون الحاجة إلى اتصال بالإنترنت. يتم نقل البيانات الصوتية محلياً بين الأجهزة ولا يتم إرسالها أبداً إلى خوادم خارجية.</p>
@@ -23,8 +23,10 @@
   <p>يستخدم التطبيق خدمات الطرف الثالث التالية، والتي قد تجمع معلومات بشكل مستقل.</p>
   <h4>Google AdMob (الإعلانات)</h4>
   <ul><li>لتقديم الإعلانات، قد تجمع Google معرفات الإعلانات ومعلومات الجهاز والموقع التقريبي وبيانات استخدام التطبيق.</li><li>قد تُستخدم البيانات المجمعة لتقديم إعلانات مخصصة.</li><li>التفاصيل: <a href='https://policies.google.com/privacy'>سياسة خصوصية Google</a></li></ul>
-  <h4>Firebase (مخطط للإصدار المستقبلي)</h4>
-  <ul><li>نخطط لدمج Firebase Authentication و Cloud Firestore للمصادقة المجهولة وجمع بيانات استخدام التطبيق.</li><li>سيتم تحديث هذه السياسة عند الدمج.</li></ul>
+  <h4>Firebase (المصادقة المجهولة، Cloud Firestore، Cloud Messaging)</h4>
+  <ul><li>يستخدم التطبيق مصادقة Firebase المجهولة لتحديد الجلسات دون ربطها بالهوية الشخصية. لا يلزم إنشاء حساب أو بريد إلكتروني/كلمة مرور.</li><li>يتم تخزين معلومات عضوية المجموعة (معرف المجموعة، الاسم المعروض، رمز FCM) في Cloud Firestore لتمكين الإشعارات الفورية. تُحذف البيانات تلقائياً عند مغادرة مجموعة أو إلغاء تثبيت التطبيق.</li><li>يُستخدم Firebase Cloud Messaging (FCM) لإرسال إشعارات دعوات المكالمات عندما يكون التطبيق في الخلفية.</li><li>التفاصيل: <a href='https://firebase.google.com/support/privacy'>خصوصية Firebase والأمان</a></li></ul>
+  <h4>Firebase Crashlytics (تقارير الأعطال)</h4>
+  <ul><li>لتحسين استقرار التطبيق، يتم إرسال معلومات الأعطال والأخطاء غير الحرجة وسجلات التنقل إلى Firebase Crashlytics.</li><li>لا تُرسل معرفات المستخدم (معرفات الجهاز، إلخ) لحماية خصوصيتك. يعمل Crashlytics باستخدام معرف تثبيت Firebase فقط.</li><li>تُرسل البيانات وتُخزن في خدمات Firebase التابعة لـ Google. لا يتوفر إقامة البيانات في الاتحاد الأوروبي؛ يُطبق إطار خصوصية البيانات بين الاتحاد الأوروبي والولايات المتحدة (DPF) من Google.</li><li>التفاصيل: <a href='https://firebase.google.com/support/privacy'>خصوصية Firebase والأمان</a></li></ul>
   <h2>٣. معلومات الموقع</h2>
   <p>يستخدم التطبيق إذن الموقع في Android (ACCESS_FINE_LOCATION) للتحكم في وظيفة نقطة اتصال Wi-Fi واسترداد معلومات SSID. هذا الإذن مطلوب من نظام Android ولا يُستخدم لتتبع موقعك الجغرافي أو تسجيله أو إرساله.</p>
   <h2>٤. الكاميرا</h2>
