@@ -11,7 +11,7 @@
 <body>
   <div class="lang-selector"><select onchange="if(this.value)window.location.href=this.value"><option value=''>🌐 Language</option><option value='privacy-policy-ar.html'>العربية</option><option value='privacy-policy-de.html'>Deutsch</option><option value='privacy-policy-en.html'>English</option><option value='privacy-policy-es.html'>Español</option><option value='privacy-policy-fr.html'>Français</option><option value='privacy-policy-hi.html'>हिन्दी</option><option value='privacy-policy-id.html' selected>Bahasa Indonesia</option><option value='privacy-policy-it.html'>Italiano</option><option value='privacy-policy-ja.html'>日本語</option><option value='privacy-policy-ko.html'>한국어</option><option value='privacy-policy-my.html'>မြန်မာ</option><option value='privacy-policy-pt.html'>Português</option><option value='privacy-policy-ru.html'>Русский</option><option value='privacy-policy-sw.html'>Kiswahili</option><option value='privacy-policy-th.html'>ไทย</option><option value='privacy-policy-vi.html'>Tiếng Việt</option><option value='privacy-policy-zh.html'>中文</option><option value='privacy-policy-zh-Hans.html'>简体中文</option><option value='privacy-policy-zh-Hant.html'>繁體中文</option></select></div>
   <h1>Kebijakan Privasi OffLink</h1>
-  <p class="updated">Terakhir diperbarui: 19 April 2026</p>
+  <p class="updated">Terakhir diperbarui: 22 April 2026</p>
   <p>H Labs Works ("kami") mengoperasikan aplikasi seluler "OffLink" ("Aplikasi"). Kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda.</p>
   <h2>1. Tentang Aplikasi</h2>
   <p>OffLink adalah aplikasi panggilan suara grup yang menggunakan teknologi hotspot Wi-Fi dan WebRTC tanpa memerlukan koneksi internet. Data suara ditransmisikan secara lokal antar perangkat dan tidak pernah dikirim ke server eksternal.</p>
@@ -23,8 +23,10 @@
   <p>Aplikasi menggunakan layanan pihak ketiga berikut, yang mungkin mengumpulkan informasi secara independen.</p>
   <h4>Google AdMob (Periklanan)</h4>
   <ul><li>Untuk penayangan iklan, Google mungkin mengumpulkan ID iklan (Android: AAID), informasi perangkat, lokasi perkiraan, dan data penggunaan aplikasi.</li><li>Data yang dikumpulkan dapat digunakan untuk menayangkan iklan yang dipersonalisasi.</li><li>Detail: <a href='https://policies.google.com/privacy'>Kebijakan Privasi Google</a></li></ul>
-  <h4>Firebase (Direncanakan untuk rilis mendatang)</h4>
-  <ul><li>Kami berencana mengintegrasikan Firebase Authentication dan Cloud Firestore untuk autentikasi anonim dan pengumpulan data penggunaan aplikasi.</li><li>Kebijakan ini akan diperbarui saat integrasi.</li></ul>
+  <h4>Firebase (Autentikasi Anonim, Cloud Firestore, Cloud Messaging)</h4>
+  <ul><li>Aplikasi menggunakan autentikasi anonim Firebase untuk mengidentifikasi sesi tanpa menghubungkannya dengan identitas pribadi. Tidak diperlukan pembuatan akun atau email/kata sandi.</li><li>Informasi keanggotaan grup (ID grup, nama tampilan, token FCM) disimpan di Cloud Firestore untuk mengaktifkan notifikasi push. Data secara otomatis dihapus ketika Anda meninggalkan grup atau menghapus instalasi Aplikasi.</li><li>Firebase Cloud Messaging (FCM) digunakan untuk mengirim notifikasi undangan panggilan saat Aplikasi berada di latar belakang.</li><li>Detail: <a href='https://firebase.google.com/support/privacy'>Privasi dan Keamanan Firebase</a></li></ul>
+  <h4>Firebase Crashlytics (Laporan Kerusakan)</h4>
+  <ul><li>Untuk meningkatkan stabilitas Aplikasi, informasi kerusakan, kesalahan non-fatal, dan log breadcrumb dikirim ke Firebase Crashlytics.</li><li>Pengidentifikasi pengguna (ID perangkat, dll.) tidak dikirimkan untuk melindungi privasi Anda. Crashlytics beroperasi hanya menggunakan Firebase Installation ID.</li><li>Data dikirim ke dan disimpan di layanan Firebase Google. Residensi data UE tidak didukung; Kerangka Privasi Data UE-AS (DPF) Google berlaku.</li><li>Detail: <a href='https://firebase.google.com/support/privacy'>Privasi dan Keamanan Firebase</a></li></ul>
   <h2>3. Informasi Lokasi</h2>
   <p>Aplikasi menggunakan izin lokasi Android (ACCESS_FINE_LOCATION) untuk mengontrol fungsi hotspot Wi-Fi dan mengambil informasi SSID. Izin ini diperlukan oleh OS Android untuk API terkait Wi-Fi dan tidak digunakan untuk melacak, merekam, atau mentransmisikan lokasi geografis Anda.</p>
   <h2>4. Kamera</h2>
@@ -36,7 +38,7 @@
   <ul><li>Informasi yang dijelaskan di Bagian 2.2 secara otomatis dikirim ke Google AdMob untuk penayangan iklan.</li><li>Ketika diwajibkan oleh hukum.</li><li>Dengan persetujuan Anda.</li></ul>
   <h2>7. Opt-Out Iklan</h2>
   <p>Jika Anda tidak ingin menerima iklan yang dipersonalisasi, Anda dapat mengubah pengaturan Anda:</p>
-  <ul><li><strong>Android:</strong> Pengaturan → Google → Iklan → Aktifkan "Nonaktifkan Personalisasi Iklan"</li><li><strong>iOS:</strong> Pengaturan → Privasi & Keamanan → Pelacakan → Nonaktifkan "Izinkan Aplikasi Meminta untuk Melacak"</li></ul>
+  <ul><li><strong>Android:</strong> Pengaturan → Google → Iklan → Aktifkan "Nonaktifkan Personalisasi Iklan"</li><li><strong>iOS:</strong> Pengaturan → Privasi &amp; Keamanan → Pelacakan → Nonaktifkan "Izinkan Aplikasi Meminta untuk Melacak"</li></ul>
   <h2>8. Penyimpanan dan Penghapusan Data</h2>
   <ul><li>Semua data yang disimpan langsung oleh Aplikasi hanya tersimpan di perangkat Anda.</li><li>Menghapus instalasi Aplikasi akan menghapus semua data lokal.</li><li>Untuk data yang dikumpulkan oleh Google AdMob, silakan lihat kebijakan privasi Google.</li></ul>
   <h2>9. Privasi Anak-anak</h2>
