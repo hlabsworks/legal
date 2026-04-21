@@ -11,7 +11,7 @@
 <body>
   <div class="lang-selector"><select onchange="if(this.value)window.location.href=this.value"><option value=''>🌐 Language</option><option value='privacy-policy-ar.html'>العربية</option><option value='privacy-policy-de.html'>Deutsch</option><option value='privacy-policy-en.html'>English</option><option value='privacy-policy-es.html'>Español</option><option value='privacy-policy-fr.html'>Français</option><option value='privacy-policy-hi.html' selected>हिन्दी</option><option value='privacy-policy-id.html'>Bahasa Indonesia</option><option value='privacy-policy-it.html'>Italiano</option><option value='privacy-policy-ja.html'>日本語</option><option value='privacy-policy-ko.html'>한국어</option><option value='privacy-policy-my.html'>မြန်မာ</option><option value='privacy-policy-pt.html'>Português</option><option value='privacy-policy-ru.html'>Русский</option><option value='privacy-policy-sw.html'>Kiswahili</option><option value='privacy-policy-th.html'>ไทย</option><option value='privacy-policy-vi.html'>Tiếng Việt</option><option value='privacy-policy-zh.html'>中文</option><option value='privacy-policy-zh-Hans.html'>简体中文</option><option value='privacy-policy-zh-Hant.html'>繁體中文</option></select></div>
   <h1>OffLink गोपनीयता नीति</h1>
-  <p class="updated">अंतिम अपडेट: 19 अप्रैल 2026</p>
+  <p class="updated">अंतिम अपडेट: 22 अप्रैल 2026</p>
   <p>H Labs Works ("हम") मोबाइल ऐप्लिकेशन "OffLink" ("ऐप") का संचालन करता है। यह गोपनीयता नीति बताती है कि हम आपकी जानकारी कैसे इकट्ठा, उपयोग और सुरक्षित करते हैं।</p>
   <h2>1. ऐप के बारे में</h2>
   <p>OffLink एक ग्रूप वॉयस कॉलिंग ऐप्लिकेशन है जो Wi-Fi हॉटस्पॉट और WebRTC तकनीक का उपयोग करता है, बिना इंटरनेट कनेक्शन के। वॉयस डेटा डिवाइसों के बीच स्थानीय रूप से प्रसारित होता है और कभी बाहरी सर्वरों को नहीं भेजा जाता।</p>
@@ -23,8 +23,10 @@
   <p>ऐप निम्नलिखित तृतीय-पक्ष सेवाओं का उपयोग करता है, जो स्वतंत्र रूप से जानकारी इकट्ठा कर सकते हैं।</p>
   <h4>Google AdMob (विज्ञापन)</h4>
   <ul><li>विज्ञापन दिखाने के लिए, Google विज्ञापन ID (Android: AAID), डिवाइस जानकारी, अनुमानित स्थान और ऐप उपयोग डेटा इकट्ठा कर सकता है।</li><li>इकट्ठा किए गए डेटा का उपयोग व्यक्तिगत विज्ञापन दिखाने के लिए किया जा सकता है।</li><li>विवरण: <a href='https://policies.google.com/privacy'>Google गोपनीयता नीति</a></li></ul>
-  <h4>Firebase (भविष्य के रिलीज़ के लिए योजनाबद्ध)</h4>
-  <ul><li>हम अनाम प्रमाणीकरण और ऐप उपयोग डेटा संग्रह के लिए Firebase Authentication और Cloud Firestore को एकीकृत करने की योजना बना रहे हैं।</li><li>एकीकरण पर यह नीति अपडेट की जाएगी।</li></ul>
+  <h4>Firebase (अनाम प्रमाणीकरण, Cloud Firestore, Cloud Messaging)</h4>
+  <ul><li>ऐप व्यक्तिगत पहचान से जोड़े बिना सत्रों की पहचान के लिए Firebase अनाम प्रमाणीकरण का उपयोग करता है। कोई खाता निर्माण या ईमेल/पासवर्ड की आवश्यकता नहीं है।</li><li>पुश नोटिफिकेशन सक्षम करने के लिए ग्रूप सदस्यता जानकारी (ग्रूप ID, प्रदर्शन नाम, FCM टोकन) Cloud Firestore में संग्रहीत की जाती है। जब आप कोई ग्रूप छोड़ते हैं या ऐप अनइंस्टॉल करते हैं तो डेटा स्वचालित रूप से हटा दिया जाता है।</li><li>Firebase Cloud Messaging (FCM) का उपयोग ऐप के बैकग्राउंड में होने पर कॉल आमंत्रण नोटिफिकेशन भेजने के लिए किया जाता है।</li><li>विवरण: <a href='https://firebase.google.com/support/privacy'>Firebase गोपनीयता और सुरक्षा</a></li></ul>
+  <h4>Firebase Crashlytics (क्रैश रिपोर्टिंग)</h4>
+  <ul><li>ऐप की स्थिरता में सुधार के लिए, क्रैश जानकारी, गैर-घातक त्रुटियां और ब्रेडक्रम्ब लॉग Firebase Crashlytics को भेजे जाते हैं।</li><li>आपकी गोपनीयता की रक्षा के लिए उपयोगकर्ता पहचानकर्ता (डिवाइस ID आदि) प्रसारित नहीं किए जाते। Crashlytics केवल Firebase Installation ID के साथ काम करता है।</li><li>डेटा Google की Firebase सेवाओं में भेजा और संग्रहीत किया जाता है। EU डेटा निवास समर्थित नहीं है; Google का EU-US डेटा प्राइवेसी फ्रेमवर्क (DPF) लागू होता है।</li><li>विवरण: <a href='https://firebase.google.com/support/privacy'>Firebase गोपनीयता और सुरक्षा</a></li></ul>
   <h2>3. स्थान जानकारी</h2>
   <p>ऐप Wi-Fi हॉटस्पॉट कार्यक्षमता को नियंत्रित करने और SSID जानकारी प्राप्त करने के लिए Android स्थान अनुमति (ACCESS_FINE_LOCATION) का उपयोग करता है। यह अनुमति Wi-Fi से संबंधित API के लिए Android OS द्वारा आवश्यक है और इसका उपयोग आपके भौगोलिक स्थान को ट्रैक, रिकॉर्ड या प्रसारित करने के लिए नहीं किया जाता।</p>
   <h2>4. कैमरा</h2>
