@@ -11,7 +11,7 @@
 <body>
   <div class="lang-selector"><select onchange="if(this.value)window.location.href=this.value"><option value=''>🌐 Language</option><option value='privacy-policy-ar.html'>العربية</option><option value='privacy-policy-de.html'>Deutsch</option><option value='privacy-policy-en.html'>English</option><option value='privacy-policy-es.html'>Español</option><option value='privacy-policy-fr.html'>Français</option><option value='privacy-policy-hi.html'>हिन्दी</option><option value='privacy-policy-id.html'>Bahasa Indonesia</option><option value='privacy-policy-it.html'>Italiano</option><option value='privacy-policy-ja.html' selected>日本語</option><option value='privacy-policy-ko.html'>한국어</option><option value='privacy-policy-my.html'>မြန်မာ</option><option value='privacy-policy-pt.html'>Português</option><option value='privacy-policy-ru.html'>Русский</option><option value='privacy-policy-sw.html'>Kiswahili</option><option value='privacy-policy-th.html'>ไทย</option><option value='privacy-policy-vi.html'>Tiếng Việt</option><option value='privacy-policy-zh.html'>中文</option><option value='privacy-policy-zh-Hans.html'>简体中文</option><option value='privacy-policy-zh-Hant.html'>繁體中文</option></select></div>
   <h1>OffLink プライバシーポリシー</h1>
-  <p class="updated">最終更新日: 2026年4月19日</p>
+  <p class="updated">最終更新日: 2026年4月22日</p>
   <p>H Labs Works（以下「当方」）は、モバイルアプリケーション「OffLink」（以下「本アプリ」）におけるユーザーの個人情報の取り扱いについて、以下の通り定めます。</p>
   <h2>1. アプリの概要</h2>
   <p>OffLink は、インターネット接続を必要とせずに、Wi-Fi ホットスポットと WebRTC を利用してグループ音声通話を行うアプリケーションです。通話データはデバイス間でローカルに送受信され、外部サーバーには送信されません。</p>
@@ -23,8 +23,10 @@
   <p>本アプリは以下の第三者サービスを利用しており、各サービスが独自に情報を収集する場合があります。</p>
   <h4>Google AdMob（広告配信）</h4>
   <ul><li>広告表示のため、広告 ID（Android: AAID）、デバイス情報、おおよその位置情報、アプリの利用状況等が Google により収集される場合があります。</li><li>収集されたデータはパーソナライズ広告の配信に使用されます。</li><li>詳細: <a href='https://policies.google.com/privacy'>Google プライバシーポリシー</a></li></ul>
-  <h4>Firebase（将来導入予定）</h4>
-  <ul><li>匿名認証およびアプリ利用データの収集を目的として、Firebase Authentication および Cloud Firestore の導入を予定しています。</li><li>導入時に本ポリシーを更新します。</li></ul>
+  <h4>Firebase（匿名認証・Cloud Firestore・プッシュ通知）</h4>
+  <ul><li>本アプリは個人情報と紐付けない形でセッションを識別するために Firebase 匿名認証を利用しています。アカウント登録やメール/パスワードの入力は不要です。</li><li>プッシュ通知の送信を目的として、グループメンバー情報（グループ ID・表示名・FCM トークン）を Cloud Firestore に保存します。グループ脱退またはアプリのアンインストール時に自動削除されます。</li><li>アプリがバックグラウンドにある際の通話招待通知の配信に Firebase Cloud Messaging（FCM）を利用しています。</li><li>詳細: <a href='https://firebase.google.com/support/privacy'>Firebase プライバシーとセキュリティ</a></li></ul>
+  <h4>Firebase Crashlytics（クラッシュレポート）</h4>
+  <ul><li>アプリの安定性向上のため、クラッシュ情報・非致命的エラー・ブレッドクラムログを Firebase Crashlytics に送信します。</li><li>ユーザー識別子（デバイス ID 等）は個人情報保護のため送信しません。Crashlytics は Firebase Installation ID のみで動作します。</li><li>データは Google の Firebase サービスに送信・保存されます（EU データレジデンシー非対応。Google EU-US データプライバシーフレームワーク（DPF）適用）。</li><li>詳細: <a href='https://firebase.google.com/support/privacy'>Firebase プライバシーとセキュリティ</a></li></ul>
   <h2>3. 位置情報について</h2>
   <p>本アプリは Wi-Fi ホットスポットの制御および SSID の取得のために、Android の位置情報権限（ACCESS_FINE_LOCATION）を使用します。この権限は Wi-Fi 関連の OS API を利用するために Android が要求するものであり、ユーザーの地理的位置を追跡・記録・送信する目的では使用しません。</p>
   <h2>4. カメラについて</h2>
