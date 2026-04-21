@@ -11,40 +11,42 @@
 <body>
   <div class="lang-selector"><select onchange="if(this.value)window.location.href=this.value"><option value=''>🌐 Language</option><option value='privacy-policy-ar.html'>العربية</option><option value='privacy-policy-de.html'>Deutsch</option><option value='privacy-policy-en.html'>English</option><option value='privacy-policy-es.html'>Español</option><option value='privacy-policy-fr.html'>Français</option><option value='privacy-policy-hi.html'>हिन्दी</option><option value='privacy-policy-id.html'>Bahasa Indonesia</option><option value='privacy-policy-it.html'>Italiano</option><option value='privacy-policy-ja.html'>日本語</option><option value='privacy-policy-ko.html'>한국어</option><option value='privacy-policy-my.html'>မြန်မာ</option><option value='privacy-policy-pt.html' selected>Português</option><option value='privacy-policy-ru.html'>Русский</option><option value='privacy-policy-sw.html'>Kiswahili</option><option value='privacy-policy-th.html'>ไทย</option><option value='privacy-policy-vi.html'>Tiếng Việt</option><option value='privacy-policy-zh.html'>中文</option><option value='privacy-policy-zh-Hans.html'>简体中文</option><option value='privacy-policy-zh-Hant.html'>繁體中文</option></select></div>
   <h1>Política de Privacidade do OffLink</h1>
-  <p class="updated">Última atualização: 19 de abril de 2026</p>
+  <p class="updated">Última atualização: 22 de abril de 2026</p>
   <p>H Labs Works ("nós") opera o aplicativo móvel "OffLink" ("o App"). Esta política de privacidade descreve como coletamos, usamos e protegemos suas informações.</p>
   <h2>1. Sobre o App</h2>
-  <p>OffLink é um aplicativo de chamada de voz em grupo que utiliza tecnologia de hotspot Wi-Fi e WebRTC sem necessidade de conexão com a Internet. Os dados de voz são transmitidos localmente entre dispositivos e nunca são enviados a servidores externos.</p>
-  <h2>2. Informações coletadas</h2>
+  <p>OffLink é um aplicativo de chamadas de voz em grupo que utiliza tecnologia de hotspot Wi-Fi e WebRTC sem necessidade de conexão à internet. Os dados de voz são transmitidos localmente entre dispositivos e nunca são enviados a servidores externos.</p>
+  <h2>2. Informações que coletamos</h2>
   <h3>2.1 Informações coletadas diretamente pelo App</h3>
-  <table><tr><th>Informação</th><th>Finalidade</th><th>Armazenamento</th></tr><tr><td>Nome de usuário (opcional)</td><td>Identificação de membros durante chamadas</td><td>Apenas no dispositivo (SharedPreferences)</td></tr><tr><td>Informações do grupo (nome, SSID, senha)</td><td>Configuração e conexão de chamadas em grupo</td><td>Apenas no dispositivo (SharedPreferences)</td></tr><tr><td>Saldo e histórico de pontos</td><td>Gerenciamento do sistema de pontos in-app</td><td>Apenas no dispositivo (criptografado)</td></tr><tr><td>Informações do dispositivo (versão do SO, bateria, memória)</td><td>Avaliação de seleção de host</td><td>Apenas durante a sessão de chamada (não persistente)</td></tr></table>
-  <p><strong>Sobre dados de voz:</strong> O áudio das chamadas é criptografado com WebRTC (DTLS-SRTP) e transmitido apenas entre dispositivos na rede local. Os dados de voz nunca são enviados aos nossos servidores ou a servidores externos.</p>
+  <table><tr><th>Informação</th><th>Finalidade</th><th>Armazenamento</th></tr><tr><td>Nome de usuário (opcional)</td><td>Identificação de membros durante chamadas</td><td>Apenas no dispositivo (SharedPreferences)</td></tr><tr><td>Informações do grupo (nome, SSID, senha)</td><td>Configuração e conexão de chamadas em grupo</td><td>Apenas no dispositivo (SharedPreferences)</td></tr><tr><td>Saldo e histórico de pontos</td><td>Gerenciamento do sistema de pontos no app</td><td>Apenas no dispositivo (criptografado)</td></tr><tr><td>Informações do dispositivo (versão do OS, bateria, memória)</td><td>Avaliação de seleção de host</td><td>Apenas durante a sessão de chamada (não persistente)</td></tr></table>
+  <p><strong>Sobre dados de voz:</strong> O áudio das chamadas é criptografado usando WebRTC (DTLS-SRTP) e transmitido apenas entre dispositivos na rede local. Os dados de voz nunca são enviados aos nossos servidores ou a qualquer servidor externo.</p>
   <h3>2.2 Informações coletadas por serviços de terceiros</h3>
   <p>O App utiliza os seguintes serviços de terceiros, que podem coletar informações de forma independente.</p>
   <h4>Google AdMob (Publicidade)</h4>
-  <ul><li>Para veiculação de anúncios, o Google pode coletar identificadores de publicidade (Android: AAID), informações do dispositivo, localização aproximada e dados de uso do app.</li><li>Os dados coletados podem ser utilizados para veicular anúncios personalizados.</li><li>Detalhes: <a href='https://policies.google.com/privacy'>Política de Privacidade do Google</a></li></ul>
-  <h4>Firebase (Planejado para versões futuras)</h4>
-  <ul><li>Planejamos integrar o Firebase Authentication e Cloud Firestore para autenticação anônima e coleta de dados de uso do app.</li><li>Esta política será atualizada no momento da integração.</li></ul>
+  <ul><li>Para exibição de anúncios, o Google pode coletar identificadores de publicidade (Android: AAID), informações do dispositivo, localização aproximada e dados de uso do app.</li><li>Os dados coletados podem ser usados para exibir anúncios personalizados.</li><li>Detalhes: <a href='https://policies.google.com/privacy'>Política de Privacidade do Google</a></li></ul>
+  <h4>Firebase (Autenticação anônima, Cloud Firestore, Cloud Messaging)</h4>
+  <ul><li>O App utiliza a autenticação anônima do Firebase para identificar sessões sem vinculá-las à identidade pessoal. Não é necessário criar conta ou usar email/senha.</li><li>Informações de associação ao grupo (ID do grupo, nome de exibição, token FCM) são armazenadas no Cloud Firestore para possibilitar notificações push. Os dados são excluídos automaticamente quando você sai de um grupo ou desinstala o App.</li><li>O Firebase Cloud Messaging (FCM) é usado para enviar notificações de convite de chamada quando o App está em segundo plano.</li><li>Detalhes: <a href='https://firebase.google.com/support/privacy'>Privacidade e segurança do Firebase</a></li></ul>
+  <h4>Firebase Crashlytics (Relatórios de falha)</h4>
+  <ul><li>Para melhorar a estabilidade do App, informações de falhas, erros não fatais e registros de navegação são enviados ao Firebase Crashlytics.</li><li>Identificadores de usuário (IDs de dispositivo, etc.) não são transmitidos para proteger sua privacidade. O Crashlytics opera usando apenas o ID de instalação do Firebase.</li><li>Os dados são enviados e armazenados nos serviços Firebase do Google. A residência de dados na UE não é suportada; aplica-se o Framework de Privacidade de Dados UE-EUA (DPF) do Google.</li><li>Detalhes: <a href='https://firebase.google.com/support/privacy'>Privacidade e segurança do Firebase</a></li></ul>
   <h2>3. Informações de localização</h2>
-  <p>O App utiliza a permissão de localização do Android (ACCESS_FINE_LOCATION) para controlar a funcionalidade de hotspot Wi-Fi e obter informações de SSID. Esta permissão é exigida pelo SO Android para APIs relacionadas ao Wi-Fi e não é utilizada para rastrear, registrar ou transmitir sua localização geográfica.</p>
+  <p>O App utiliza a permissão de localização do Android (ACCESS_FINE_LOCATION) para controlar a funcionalidade de hotspot Wi-Fi e obter informações de SSID. Essa permissão é exigida pelo sistema operacional Android para APIs relacionadas ao Wi-Fi e não é usada para rastrear, registrar ou transmitir sua localização geográfica.</p>
   <h2>4. Câmera</h2>
-  <p>O App utiliza a permissão de câmera para leitura de códigos QR. As imagens capturadas são usadas exclusivamente para análise de códigos QR e não são armazenadas ou transmitidas.</p>
+  <p>O App usa a permissão de câmera para escanear códigos QR. As imagens capturadas são usadas apenas para análise de código QR e não são armazenadas ou transmitidas.</p>
   <h2>5. Microfone</h2>
-  <p>O App utiliza a permissão de microfone para chamadas de voz em grupo. O áudio gravado é transmitido em tempo real apenas para membros na mesma rede local e nunca é gravado ou armazenado em qualquer dispositivo ou servidor.</p>
+  <p>O App usa a permissão de microfone para chamadas de voz em grupo. O áudio gravado é transmitido em tempo real apenas para membros na mesma rede local e nunca é gravado ou armazenado em qualquer dispositivo ou servidor.</p>
   <h2>6. Compartilhamento de dados com terceiros</h2>
   <p>Não compartilhamos suas informações pessoais com terceiros, exceto nos seguintes casos:</p>
-  <ul><li>As informações descritas na Seção 2.2 são automaticamente transmitidas ao Google AdMob para veiculação de anúncios.</li><li>Quando exigido por lei.</li><li>Com seu consentimento.</li></ul>
+  <ul><li>As informações descritas na Seção 2.2 são automaticamente transmitidas ao Google AdMob para entrega de anúncios.</li><li>Quando exigido por lei.</li><li>Com seu consentimento.</li></ul>
   <h2>7. Opt-out de publicidade</h2>
-  <p>Se preferir não receber anúncios personalizados, você pode alterar suas configurações:</p>
-  <ul><li><strong>Android:</strong> Configurações → Google → Anúncios → Ativar "Desativar personalização de anúncios"</li><li><strong>iOS:</strong> Ajustes → Privacidade e Segurança → Rastreamento → Desativar "Permitir que apps solicitem rastreamento"</li></ul>
+  <p>Se você não quiser receber anúncios personalizados, pode alterar suas configurações:</p>
+  <ul><li><strong>Android:</strong> Configurações → Google → Anúncios → Ativar "Cancelar personalização de anúncios"</li><li><strong>iOS:</strong> Ajustes → Privacidade e Segurança → Rastreamento → Desativar "Permitir que apps solicitem rastreamento"</li></ul>
   <h2>8. Retenção e exclusão de dados</h2>
-  <ul><li>Todos os dados armazenados diretamente pelo App são salvos apenas no seu dispositivo.</li><li>A desinstalação do App excluirá todos os dados locais.</li><li>Para dados coletados pelo Google AdMob, consulte a política de privacidade do Google.</li></ul>
-  <h2>9. Privacidade infantil</h2>
-  <p>O App não é destinado a menores de 13 anos e não coletamos intencionalmente informações pessoais de menores de 13 anos.</p>
+  <ul><li>Todos os dados armazenados diretamente pelo App são salvos apenas no seu dispositivo.</li><li>Desinstalar o App excluirá todos os dados locais.</li><li>Para dados coletados pelo Google AdMob, consulte a política de privacidade do Google.</li></ul>
+  <h2>9. Privacidade de crianças</h2>
+  <p>O App não é destinado a crianças menores de 13 anos e não coletamos intencionalmente informações pessoais de crianças menores de 13 anos.</p>
   <h2>10. Alterações nesta política</h2>
-  <p>Podemos atualizar esta política de privacidade conforme necessário. Alterações significativas serão comunicadas por meio de notificações no app ou nesta página.</p>
-  <h2>11. Fale conosco</h2>
-  <p>Para dúvidas sobre esta política de privacidade, entre em contato conosco:</p>
-  <ul><li>Operador: H Labs Works</li><li>Email: hlabsworks@gmail.com</li></ul>
+  <p>Podemos atualizar esta política de privacidade conforme necessário. Mudanças significativas serão comunicadas por meio de notificações no app ou nesta página.</p>
+  <h2>11. Contate-nos</h2>
+  <p>Para perguntas sobre esta política de privacidade, entre em contato conosco:</p>
+  <ul><li>Operador: H Labs Works</li><li>E-mail: hlabsworks@gmail.com</li></ul>
 </body>
 </html>
