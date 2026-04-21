@@ -11,7 +11,7 @@
 <body>
   <div class="lang-selector"><select onchange="if(this.value)window.location.href=this.value"><option value=''>🌐 Language</option><option value='privacy-policy-ar.html'>العربية</option><option value='privacy-policy-de.html'>Deutsch</option><option value='privacy-policy-en.html' selected>English</option><option value='privacy-policy-es.html'>Español</option><option value='privacy-policy-fr.html'>Français</option><option value='privacy-policy-hi.html'>हिन्दी</option><option value='privacy-policy-id.html'>Bahasa Indonesia</option><option value='privacy-policy-it.html'>Italiano</option><option value='privacy-policy-ja.html'>日本語</option><option value='privacy-policy-ko.html'>한국어</option><option value='privacy-policy-my.html'>မြန်မာ</option><option value='privacy-policy-pt.html'>Português</option><option value='privacy-policy-ru.html'>Русский</option><option value='privacy-policy-sw.html'>Kiswahili</option><option value='privacy-policy-th.html'>ไทย</option><option value='privacy-policy-vi.html'>Tiếng Việt</option><option value='privacy-policy-zh.html'>中文</option><option value='privacy-policy-zh-Hans.html'>简体中文</option><option value='privacy-policy-zh-Hant.html'>繁體中文</option></select></div>
   <h1>OffLink Privacy Policy</h1>
-  <p class="updated">Last updated: April 19, 2026</p>
+  <p class="updated">Last updated: April 22, 2026</p>
   <p>H Labs Works ("we", "us", or "our") operates the mobile application "OffLink" ("the App"). This privacy policy describes how we collect, use, and protect your information.</p>
   <h2>1. About the App</h2>
   <p>OffLink is a group voice calling application that uses Wi-Fi hotspot and WebRTC technology without requiring an internet connection. Voice data is transmitted locally between devices and is never sent to external servers.</p>
@@ -23,8 +23,10 @@
   <p>The App uses the following third-party services, which may independently collect information.</p>
   <h4>Google AdMob (Advertising)</h4>
   <ul><li>For ad delivery, Google may collect advertising IDs (Android: AAID), device information, approximate location, and app usage data.</li><li>Collected data may be used to deliver personalized advertisements.</li><li>Details: <a href='https://policies.google.com/privacy'>Google Privacy Policy</a></li></ul>
-  <h4>Firebase (Planned for future release)</h4>
-  <ul><li>We plan to integrate Firebase Authentication and Cloud Firestore for anonymous authentication and app usage data collection.</li><li>This policy will be updated upon integration.</li></ul>
+  <h4>Firebase (Anonymous Authentication, Cloud Firestore, Cloud Messaging)</h4>
+  <ul><li>The App uses Firebase Anonymous Authentication to identify sessions without linking to personal identity. No account creation or email/password is required.</li><li>Group membership information (group ID, display name, FCM token) is stored in Cloud Firestore to enable push notifications. Data is automatically deleted when you leave a group or uninstall the App.</li><li>Firebase Cloud Messaging (FCM) is used to deliver call invitation notifications when the App is in the background.</li><li>Details: <a href='https://firebase.google.com/support/privacy'>Firebase Privacy and Security</a></li></ul>
+  <h4>Firebase Crashlytics (Crash Reporting)</h4>
+  <ul><li>To improve app stability, crash information, non-fatal errors, and breadcrumb logs are sent to Firebase Crashlytics.</li><li>User identifiers (device IDs, etc.) are not transmitted to protect your privacy. Crashlytics operates using only the Firebase Installation ID.</li><li>Data is sent to and stored in Google's Firebase services. EU data residency is not supported; the Google EU–US Data Privacy Framework (DPF) applies.</li><li>Details: <a href='https://firebase.google.com/support/privacy'>Firebase Privacy and Security</a></li></ul>
   <h2>3. Location Information</h2>
   <p>The App uses Android's location permission (ACCESS_FINE_LOCATION) to control Wi-Fi hotspot functionality and retrieve SSID information. This permission is required by the Android OS for Wi-Fi-related APIs and is not used to track, record, or transmit your geographic location.</p>
   <h2>4. Camera</h2>
