@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OffLink Privacy Policy</title>
+  <script>
+    (function() {
+      var supported = {
+        'ja': 'ja', 'en': 'en', 'ar': 'ar', 'de': 'de', 'es': 'es',
+        'fr': 'fr', 'hi': 'hi', 'id': 'id', 'it': 'it', 'ko': 'ko',
+        'my': 'my', 'pt': 'pt', 'ru': 'ru', 'sw': 'sw', 'th': 'th',
+        'vi': 'vi', 'zh': 'zh', 'zh-hans': 'zh-Hans', 'zh-hant': 'zh-Hant',
+        'zh-cn': 'zh-Hans', 'zh-sg': 'zh-Hans',
+        'zh-tw': 'zh-Hant', 'zh-hk': 'zh-Hant'
+      };
+      var langs = navigator.languages || [navigator.language || 'en'];
+      for (var i = 0; i < langs.length; i++) {
+        var tag = langs[i].toLowerCase();
+        if (supported[tag]) { window.location.replace('privacy-policy-' + supported[tag] + '.html'); return; }
+        var base = tag.split('-')[0];
+        if (supported[base]) { window.location.replace('privacy-policy-' + supported[base] + '.html'); return; }
+      }
+      window.location.replace('privacy-policy-en.html');
+    })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url=privacy-policy-en.html"></noscript>
+</head>
+<body>
+  <p>Redirecting… <a href="privacy-policy-en.html">Click here</a> if not redirected.</p>
+</body>
+</html>
