@@ -8,6 +8,11 @@
 - [プライバシーポリシー (Privacy Policy)](./offlink/privacy-policy.html) — 自動言語検出リダイレクト
 - 利用規約 (Terms of Service) — 準備中
 
+### PipeCrafter 3D
+- [プライバシーポリシー (Privacy Policy)](./pipecrafter3d/privacy-policy.html) — 自動言語検出リダイレクト (日本語 / 英語)
+  - [日本語](https://hlabsworks.github.io/legal/pipecrafter3d/privacy-policy-ja.html) / [English](https://hlabsworks.github.io/legal/pipecrafter3d/privacy-policy-en.html)
+- 利用規約 (Terms of Service) — iOS は Apple 標準の EULA。Android 向けは準備中
+
 ---
 
 ## 🌐 プライバシーポリシー — 全19言語
